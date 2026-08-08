@@ -1,3 +1,4 @@
+import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
 import { ReactNode } from "react";
 
@@ -8,7 +9,9 @@ function Layout({ children }: { children: ReactNode }) {
         <Header />
       </header>
       <main>{children}</main>
-      <footer>footer</footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
